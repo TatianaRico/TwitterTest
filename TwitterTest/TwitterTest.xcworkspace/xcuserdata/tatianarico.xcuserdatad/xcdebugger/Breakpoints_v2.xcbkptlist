@@ -98,6 +98,38 @@
             endingLineNumber = "89"
             landmarkName = "getUserTwitter()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ED492DC3-E2AB-474B-8531-DC5157123B12 - 290f79177496f5f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TwitterTest.ViewController.(getUserTwitter in _7EF0739F614A0FC93E2D49D6DA6C5DDD)() -&gt; ()"
+                  moduleName = "TwitterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatianarico/Documents/TwitterTest/TwitterTest/TwitterTest/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "294">
+               </Location>
+               <Location
+                  uuid = "ED492DC3-E2AB-474B-8531-DC5157123B12 - 4e51ca79e02092ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;TwitterTest.UserTwitter&gt;) -&gt; () in TwitterTest.ViewController.(getUserTwitter in _7EF0739F614A0FC93E2D49D6DA6C5DDD)() -&gt; ()"
+                  moduleName = "TwitterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatianarico/Documents/TwitterTest/TwitterTest/TwitterTest/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "210">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -194,6 +226,38 @@
             endingLineNumber = "16"
             landmarkName = "requestUserTwitter(username:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45AB4CB1-AF0C-439C-8F83-313CA49DCFAB - 54f6f0b2f5e04510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TwitterTest.Request.requestUserTwitter(username: Swift.String, completion: (Swift.Optional&lt;TwitterTest.UserTwitter&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "TwitterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatianarico/Documents/TwitterTest/TwitterTest/TwitterTest/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "45AB4CB1-AF0C-439C-8F83-313CA49DCFAB - 50f96a9343b5d715"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in TwitterTest.Request.requestUserTwitter(username: Swift.String, completion: (Swift.Optional&lt;TwitterTest.UserTwitter&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "TwitterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatianarico/Documents/TwitterTest/TwitterTest/TwitterTest/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -210,38 +274,6 @@
             endingLineNumber = "17"
             landmarkName = "requestUserTwitter(username:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E23674A4-C96E-46FA-96AF-D194BF15DEF4 - 54f6f0b2f5e04510"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TwitterTest.Request.requestUserTwitter(username: Swift.String, completion: (Swift.Optional&lt;TwitterTest.UserTwitter&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tatianarico/Documents/TwitterTest/TwitterTest/TwitterTest/Request.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "E23674A4-C96E-46FA-96AF-D194BF15DEF4 - 50f96a9343b5d715"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in TwitterTest.Request.requestUserTwitter(username: Swift.String, completion: (Swift.Optional&lt;TwitterTest.UserTwitter&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tatianarico/Documents/TwitterTest/TwitterTest/TwitterTest/Request.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "277">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
