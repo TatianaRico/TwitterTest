@@ -9,13 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //MARK: - Attributes
+    let controller = TwitterController()
+    var nameTextField: String?
     
+    //MARK: - Layout Attributes
     fileprivate var searchName: UITextField = {
         let searchName = UITextField()
         searchName.keyboardType = .default
         searchName.borderStyle = .roundedRect
         searchName.returnKeyType = .done
-        searchName.placeholder = "Digite aqui um nome"
+        searchName.placeholder = "Digite um usuario do Twitter"
+        searchName.becomeFirstResponder()
         return searchName
     }()
     
@@ -25,16 +30,21 @@ class ViewController: UIViewController {
         btn.tintColor = .black
         btn.backgroundColor = .blue
         btn.layer.cornerRadius = 10
+        btn.addTarget(self, action: #selector(actionBtn), for: .touchUpInside)
         return btn
     }()
     
     fileprivate var tableView = UITableView()
     
+    //MARK: -Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupContrains()
+        setupTextField()
+        setupTableView()
     }
     
+    //MARK: - SetupCOntrains
     fileprivate func setupContrains() {
         view.addSubview(searchName)
         view.addSubview(searchBtn)
@@ -63,23 +73,65 @@ class ViewController: UIViewController {
         view.addConstraints([leadingTbConstraint, topMarginTbConstraint, trailingTbConstraint, heightTbConstraint])
     }
     
+    //MARK: - Setup Functions
     fileprivate func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
+        self.tableView.register(TwitterTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
+    fileprivate func setupTextField() {
+        self.searchName.delegate = self
+    }
+ 
+   fileprivate func getUserTwitter() {
+    guard let name = searchName.text else { return }
+    self.controller.getRequestUserTwitter(name: name) { (sucess, model) in
+            if sucess {
+                guard let model = model , let id = model.id else { return }
+                self.getId(id: id)
+            } else {
+                self.tableView.reloadData()
+        }
+        }
+    }
+    
+   fileprivate func getId(id: String) {
+        self.controller.getIdUserTwitter(id: id) { (sucess) in
+            if sucess{
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    @objc func actionBtn() {
+        searchName.resignFirstResponder()
+        self.getUserTwitter()
+    }
 }
 
+//MARK: - UITableView Extension
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        return controller.numberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TwitterTableViewCell else { return UITableViewCell()}
-        cell.textLabel?.text = "teste"
+        cell.setupCell(model: controller.cellForItem(indexPath: indexPath))
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130.0
+    }
+}
+
+//MARK: - UITextFielDelegate Extension
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchName.resignFirstResponder()
+        return true
     }
 }
 
