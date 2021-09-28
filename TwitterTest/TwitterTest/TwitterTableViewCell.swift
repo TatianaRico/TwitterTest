@@ -9,7 +9,7 @@
 import UIKit
 
 class TwitterTableViewCell: UITableViewCell {
-    //MARK: Atributtes
+    //MARK: Atributtes    
     fileprivate let textLb: UILabel = {
         let lb = UILabel()
         lb.numberOfLines = 0
@@ -27,8 +27,13 @@ class TwitterTableViewCell: UITableViewCell {
         contentView.addConstraints([leadingConstraint, trailingConstraint,  topMarginConstraint, heightConstraint])
     }
     
+    public func setupError() {
+        setupConstrains()
+        textLb.text = "Não achamos nenhum twitter, verifique o nome do usuario e tente novamente."
+    }
+    
     public func setupCell(model: MsgTwitter) {
         setupConstrains()
-        textLb.text = model.text
+            textLb.text = model.text
     }
 }

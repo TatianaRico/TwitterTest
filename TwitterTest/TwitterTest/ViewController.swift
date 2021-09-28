@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     //MARK: - Attributes
-    let controller = TwitterController()
-    var nameTextField: String?
+   fileprivate let controller = TwitterController()
+    fileprivate var nameTextField: String?
+    fileprivate var error: Bool = true
     
     //MARK: - Layout Attributes
     fileprivate var searchName: UITextField = {
@@ -78,6 +79,7 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(TwitterTableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.separatorColor = .clear
     }
     
     fileprivate func setupTextField() {
@@ -87,17 +89,20 @@ class ViewController: UIViewController {
    fileprivate func getUserTwitter() {
     guard let name = searchName.text else { return }
     self.controller.getRequestUserTwitter(name: name) { (sucess, model) in
+        if model == nil {
+            self.tableView.reloadData()
+            return
+        }
             if sucess {
-                guard let model = model , let id = model.id else { return }
+                guard let model = model, let id = model.id else { return }
                 self.getId(id: id)
-            } else {
-                self.tableView.reloadData()
+            }
         }
-        }
-    }
+   
+}
     
-   fileprivate func getId(id: String) {
-        self.controller.getIdUserTwitter(id: id) { (sucess) in
+    fileprivate func getId(id: String) {
+    self.controller.getIdUserTwitter(id: id) { (sucess) in
             if sucess{
                 self.tableView.reloadData()
             }
@@ -113,12 +118,22 @@ class ViewController: UIViewController {
 //MARK: - UITableView Extension
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return controller.numberOfRows()
+        if controller.idUser?.data?.count ?? 0 >= 1 {
+            return controller.numberOfRows()
+        } else {
+          return 1
+        }
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TwitterTableViewCell else { return UITableViewCell()}
+        if controller.idUser?.data?.isEmpty ?? false ||
+            controller.idUser?.data?.count ?? 0 == 0 {
+            cell.setupError()
+        } else {
         cell.setupCell(model: controller.cellForItem(indexPath: indexPath))
+        }
         return cell
     }
     

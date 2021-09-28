@@ -40,7 +40,9 @@ class Request {
                     if let data = response.data {
                         let json = try
                             JSONDecoder().decode(MsgIdTwitter.self, from: data)
+                          DispatchQueue.main.async {
                         completion(json, true)
+                        }
                     }
                 }
                 catch {

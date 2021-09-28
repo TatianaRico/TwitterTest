@@ -14,7 +14,8 @@ class TwitterController {
     var modelUser: UserTwitter?
     var idUser: MsgIdTwitter?
     var msg: MsgTwitter?
-    
+    var idTwitter: TwitterModel?
+
     //MARK: request functions
     public func getRequestUserTwitter(name: String, completion: @escaping (Bool, UserTwitter?) -> Void) {
         request.requestUserTwitter(username: name){ (model, sucess) in
