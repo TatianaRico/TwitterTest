@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     //MARK: - Attributes
-   fileprivate let controller = TwitterController()
+   fileprivate let controller = TwitterViewModel()
     fileprivate var nameTextField: String?
     fileprivate var error: Bool = true
     

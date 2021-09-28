@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TwitterController {
+class TwitterViewModel {
     //MARK: - Atributtes
     let request = Request()
     var modelUser: UserTwitter?
