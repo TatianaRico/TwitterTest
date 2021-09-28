@@ -7,7 +7,6 @@ target 'TwitterTest' do
 
   # Pods for TwitterTest
    pod 'Alamofire'
-   pod 'lottie-ios'
 
   target 'TwitterTestTests' do
     inherit! :search_paths

@@ -13,7 +13,6 @@
 		B9290CBC26FD366E008C6CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CBB26FD366E008C6CF6 /* AppDelegate.swift */; };
 		B9290CBE26FD366E008C6CF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CBD26FD366E008C6CF6 /* SceneDelegate.swift */; };
 		B9290CC026FD366E008C6CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CBF26FD366E008C6CF6 /* ViewController.swift */; };
-		B9290CC526FD3671008C6CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9290CC426FD3671008C6CF6 /* Assets.xcassets */; };
 		B9290CC826FD3671008C6CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9290CC626FD3671008C6CF6 /* LaunchScreen.storyboard */; };
 		B9290CD326FD3672008C6CF6 /* TwitterTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CD226FD3672008C6CF6 /* TwitterTestTests.swift */; };
 		B9290CDE26FD3672008C6CF6 /* TwitterTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CDD26FD3672008C6CF6 /* TwitterTestUITests.swift */; };
@@ -21,9 +20,7 @@
 		B9290CF126FE5BBD008C6CF6 /* TwitterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CF026FE5BBD008C6CF6 /* TwitterModel.swift */; };
 		B9290CF326FE5E84008C6CF6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CF226FE5E84008C6CF6 /* Request.swift */; };
 		B9290CF526FE69CF008C6CF6 /* TwitterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290CF426FE69CF008C6CF6 /* TwitterController.swift */; };
-		B99B0F322702748A002CE5C5 /* 9329-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B99B0F312702748A002CE5C5 /* 9329-loading.json */; };
-		B99B0F332702748A002CE5C5 /* 9329-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B99B0F312702748A002CE5C5 /* 9329-loading.json */; };
-		B99B0F342702748A002CE5C5 /* 9329-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B99B0F312702748A002CE5C5 /* 9329-loading.json */; };
+		B99B0F36270348D4002CE5C5 /* Assets  in Resources */ = {isa = PBXBuildFile; fileRef = B99B0F35270348D4002CE5C5 /* Assets  */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +51,6 @@
 		B9290CBB26FD366E008C6CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9290CBD26FD366E008C6CF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B9290CBF26FD366E008C6CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B9290CC426FD3671008C6CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9290CC726FD3671008C6CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9290CC926FD3671008C6CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9290CCE26FD3672008C6CF6 /* TwitterTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +63,7 @@
 		B9290CF026FE5BBD008C6CF6 /* TwitterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterModel.swift; sourceTree = "<group>"; };
 		B9290CF226FE5E84008C6CF6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		B9290CF426FE69CF008C6CF6 /* TwitterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterController.swift; sourceTree = "<group>"; };
-		B99B0F312702748A002CE5C5 /* 9329-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9329-loading.json"; sourceTree = "<group>"; };
+		B99B0F35270348D4002CE5C5 /* Assets  */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Assets "; sourceTree = "<group>"; };
 		CA13C560CFE985629EB8D696 /* Pods-TwitterTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTest.release.xcconfig"; path = "Target Support Files/Pods-TwitterTest/Pods-TwitterTest.release.xcconfig"; sourceTree = "<group>"; };
 		CFEF2145E937EBF799439B00 /* Pods-TwitterTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTestTests.debug.xcconfig"; path = "Target Support Files/Pods-TwitterTestTests/Pods-TwitterTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E421519105EEEC25E9522622 /* Pods-TwitterTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTest.debug.xcconfig"; path = "Target Support Files/Pods-TwitterTest/Pods-TwitterTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +140,7 @@
 				B9290CBF26FD366E008C6CF6 /* ViewController.swift */,
 				B9290CF426FE69CF008C6CF6 /* TwitterController.swift */,
 				B9290CEC26FE4755008C6CF6 /* TwitterTableViewCell.swift */,
-				B99B0F3027027469002CE5C5 /* Assets  */,
+				B99B0F35270348D4002CE5C5 /* Assets  */,
 				B9290CC626FD3671008C6CF6 /* LaunchScreen.storyboard */,
 				B9290CC926FD3671008C6CF6 /* Info.plist */,
 				B9290CF026FE5BBD008C6CF6 /* TwitterModel.swift */,
@@ -169,15 +165,6 @@
 				B9290CDF26FD3672008C6CF6 /* Info.plist */,
 			);
 			path = TwitterTestUITests;
-			sourceTree = "<group>";
-		};
-		B99B0F3027027469002CE5C5 /* Assets  */ = {
-			isa = PBXGroup;
-			children = (
-				B9290CC426FD3671008C6CF6 /* Assets.xcassets */,
-				B99B0F312702748A002CE5C5 /* 9329-loading.json */,
-			);
-			path = "Assets ";
 			sourceTree = "<group>";
 		};
 		C99E8FFA8EE4F362100BFF4C /* Frameworks */ = {
@@ -299,9 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99B0F36270348D4002CE5C5 /* Assets  in Resources */,
 				B9290CC826FD3671008C6CF6 /* LaunchScreen.storyboard in Resources */,
-				B99B0F322702748A002CE5C5 /* 9329-loading.json in Resources */,
-				B9290CC526FD3671008C6CF6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +295,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B99B0F332702748A002CE5C5 /* 9329-loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +302,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B99B0F342702748A002CE5C5 /* 9329-loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
